@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0e66490-f448-4d7a-9565-ec8ebf49e481" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tobolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Tobolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +37,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/samurai-way-main",
+    "last_opened_file_path": "E:/Todolist/src",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "D:\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -56,6 +54,7 @@
       <workItem from="1661844230474" duration="34000" />
       <workItem from="1661958927682" duration="1995000" />
       <workItem from="1661960950510" duration="3620000" />
+      <workItem from="1663054957373" duration="9563000" />
     </task>
     <servers />
   </component>
