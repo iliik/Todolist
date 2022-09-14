@@ -1,5 +1,7 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
+import React, {ChangeEvent} from 'react';
 import {FilterValuesType} from "./App";
+import {AddItemForm} from "./AddItemForm";
+import {EditableSpan} from "./EditableSpan";
 
 export type TaskType = {
     id: string
@@ -15,33 +17,14 @@ type PropsType = {
     changeFilter: (value: FilterValuesType, todolistId: string) => void
     addTask: (title: string, todolistId: string) => void
     changeTaskStatus: (taskId: string, isDone: boolean, todolistId: string) => void
+    changeTaskTitle: (taskId: string, newTitle: string, todolistId: string) => void
     filter: FilterValuesType
-    remuveTodolist:(todolistId:string)=>void
-
+    remuveTodolist: (todolistId: string) => void
+    chengTodolistTitle:(newTitle:string, id:string)=>void
 }
 
 export const Tobolist = (props: PropsType) => {
 
-    const [title, setTitle] = useState('')
-    const [error, setError] = useState<string | null>(null)
-
-    const onNewTitleChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setTitle(e.currentTarget.value)
-    }
-    const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-        setError(null)
-        if (e.charCode === 13) {
-            addTask();
-        }
-    }
-    const addTask = () => {
-        if (title.trim() !== '') {
-            props.addTask(title.trim(), props.id);
-            setTitle('');
-        } else {
-            setError('ERROR')
-        }
-    }
     const onAllClickHandler = () => {
         props.changeFilter('all', props.id)
     }
@@ -51,36 +34,41 @@ export const Tobolist = (props: PropsType) => {
     const onComplitedClickhandler = () => {
         props.changeFilter('complited', props.id)
     }
-    const remuveTodolist =()=>{
+    const remuveTodolist = () => {
         props.remuveTodolist(props.id)
+    }
+    const addTask =(title:string)=>{
+        props.addTask(title,props.id)
+    }
+    const chengTodolistTitle = (newTitle:string) => {
+        props.chengTodolistTitle(props.id, newTitle)
     }
     return (
         <div>
-            <h3>{props.title} <button onClick={remuveTodolist}>Delite</button></h3>
-            <div>
-                <input value={title} onChange={onNewTitleChangeHandler}
-                       onKeyPress={onKeyPressHandler}
-                       className={error ? 'error' : ''}/>
-                <button onClick={addTask}>+</button>
-                {error && <div className='errorMessage'>{error}</div>}
-            </div>
+            <h3><EditableSpan title={props.title} onChange={chengTodolistTitle}/>
+                <button onClick={remuveTodolist}>Delite</button>
+            </h3>
+            <AddItemForm addItem={addTask} />
             <ul>
                 {props.tasks.map(t => {
                     const onRemuveHandler = () => {
                         props.removeTask(t.id, props.id)
                     }
-                    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+                    const onChangeStatusHandler = (e: ChangeEvent<HTMLInputElement>) => {
                         props.changeTaskStatus(t.id, e.currentTarget.checked, props.id)
+                    }
+                    const onChangeTitleHandler = (newValue:string) => {
+                        props.changeTaskTitle(t.id, newValue, props.id)
                     }
                     return <li key={t.id} className={t.isDone ? 'isDone' : ''}><input
                         type={"checkbox"}
                         checked={t.isDone}
-                        onChange={onChangeHandler}/><span>{t.title}</span>
+                        onChange={onChangeStatusHandler}/>
+                        <EditableSpan title={t.title} onChange={onChangeTitleHandler}/>
                         <button onClick={onRemuveHandler}>x</button>
                     </li>
                 })}
             </ul>
-
             <div>
 
                 <button className={props.filter === 'all' ? 'activeFilter' : ''}
@@ -96,3 +84,4 @@ export const Tobolist = (props: PropsType) => {
         </div>
     )
 };
+

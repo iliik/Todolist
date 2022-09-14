@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0e66490-f448-4d7a-9565-ec8ebf49e481" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+    <list default="true" id="e0e66490-f448-4d7a-9565-ec8ebf49e481" name="Changes" comment="todo-2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tobolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Tobolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Todolist/src",
+    "last_opened_file_path": "E:/Todolist",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "D:\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
@@ -54,8 +50,16 @@
       <workItem from="1661844230474" duration="34000" />
       <workItem from="1661958927682" duration="1995000" />
       <workItem from="1661960950510" duration="3620000" />
-      <workItem from="1663054957373" duration="9563000" />
+      <workItem from="1663054957373" duration="10251000" />
     </task>
+    <task id="LOCAL-00001" summary="todo-2">
+      <created>1663072017808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663072017808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="todo-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo-2" />
   </component>
 </project>
