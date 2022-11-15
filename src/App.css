@@ -1,3 +1,4 @@
+
 .App {
   padding: 30px;
   display: flex;
@@ -7,17 +8,19 @@
   margin-right: 50px;
 }
 
-.error{
-    color: deeppink;
+.error {
+  border: red 1px solid;
 }
 
-.errorMessage {
-   color: deeppink;
- }
+.error-message {
+  color: red;
+}
 
 .active-filter {
-   color: deeppink;
+  background-color: aquamarine;
 }
-.isDone{
-    opacity: 0.5;
+
+.is-done {
+  opacity: 0.5;
 }
+
