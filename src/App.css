@@ -6,3 +6,18 @@
 .App > div {
   margin-right: 50px;
 }
+
+.error{
+    color: deeppink;
+}
+
+.errorMessage {
+   color: deeppink;
+ }
+
+.active-filter {
+   color: deeppink;
+}
+.isDone{
+    opacity: 0.5;
+}
