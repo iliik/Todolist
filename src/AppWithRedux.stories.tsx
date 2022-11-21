@@ -1,18 +1,14 @@
-import {AddItemForm} from "./AddItemForm";
-import {action} from "@storybook/addon-actions";
-import {Task} from "./Task";
-import {EditableSpan} from "./EditableSpan";
 import AppWithRedux from "./AppWithRedux";
+import {ReduxStoreProviderDecorator} from "./ReduxStoreProviderDecorator";
 
 export default {
     title: 'AppWithRedux Component',
-    component: AppWithRedux
+    component: AppWithRedux,
+    decorators: [ReduxStoreProviderDecorator]
 }
 
 
 export const AppWithReduxBaseExample = (props: any) => {
-    return <>
-        <AppWithRedux/>
-
-    </>
+    return
+    <AppWithRedux/>
 }
